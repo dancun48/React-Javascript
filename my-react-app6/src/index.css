@@ -1,0 +1,23 @@
+
+.list-category{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 10px;
+  background-color: rgb(92, 228, 228);
+  margin-bottom: 5px;
+  color: hsla(0, 0%, 0%, 0.664);
+}
+.list-items{
+  font-size: 2em;
+  text-align: center;
+  list-style: none;
+  color: hsla(0, 0%, 0%, 0.521);
+  margin: 0;
+  padding: 5px;
+}
+.list-items li:hover{
+  cursor: pointer;
+  color: hsla(0, 0%, 0%, 0.9);
+}

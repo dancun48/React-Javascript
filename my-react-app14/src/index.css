@@ -1,0 +1,30 @@
+
+div{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 3rem;
+    color: rgba(12, 11, 10, 0.795);
+}
+input{
+    margin: 2px;
+    font-size: 1.6rem;
+}
+button{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    background-color: hsl(160, 72%, 65%);
+    border: 1px solid hsl(0, 7%, 20%);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+ul li{
+    list-style-type: none;
+    font-size: 1.3rem;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+}
