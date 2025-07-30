@@ -1,0 +1,34 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "title": "Sr. React Developer",
+            "salary": 500000,
+            "location": "Nairobi"
+        },
+        {
+            "id": 2,
+            "title": "Software Engineer",
+            "salary": 800000,
+            "location": "Kisumu"
+        },
+        {
+            "id": 3,
+            "title": "Data Analyst",
+            "salary": 400000,
+            "location": "Mombasa"
+        },
+        {
+            "id": 4,
+            "title": "Junior Web Developer",
+            "salary": 200000,
+            "location": "Nakuru"
+        },
+        {
+            "id": 5,
+            "title": "MIS Specialist",
+            "salary": 600000,
+            "location": "Eldoret"
+        }
+    ]
+}
