@@ -15,10 +15,10 @@ const Jobs = () => {
             {jobsData.map((job) => {
                 return  (<Link>
                 
-                            <h4>{job.id}</h4>
-                            <h4>{job.title}</h4>
-                            <p>{job.location}</p>
-                            <p>{job.salary}</p>
+                            <h4>ID: 00/{job.id}/2025</h4>
+                            <h4>Title: {job.title}</h4>
+                            <p>Location: {job.location}</p>
+                            <p>Salary: {job.salary}</p>
 
                         </Link>)
             })}
