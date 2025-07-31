@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import NavBar from './components/NavBar';
-import { Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+//import NavBar from './components/NavBar';
+import { /*Routes,*/ Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
@@ -14,6 +14,8 @@ import ContactForm from './components/ContactForm';
 import NotFound from './components/NotFound';
 import JobsLayout from './layout/JobsLayout';
 import Jobs, { jobsLoader } from './pages/Jobs';
+import JobDetails, { jobDetailsLoader } from './components/JobDetails';
+import Error from './components/Error';
 
 
 
@@ -37,8 +39,12 @@ const App = () => {
                   
                   </Route>
 
-                  <Route path='jobs' element={<JobsLayout />}> {/*the ja=son page needs to load before this ppage loads so that the jobs data can be displayed upon visit */}
+                  <Route path='jobs' element={<JobsLayout />} errorElement={<Error />}> {/*the ja=son page needs to load before this ppage loads so that the jobs data can be displayed upon visit */}
                     <Route index element={<Jobs />} loader={jobsLoader}/>
+
+                    {/*dynaimc route for each of the jobs and an error for when a page or job cannot b found on the jobs page */}
+
+                    <Route path=':id' element={<JobDetails />} loader={jobDetailsLoader}/>
                   </Route>
 
                   <Route path='*' element={<NotFound />} />

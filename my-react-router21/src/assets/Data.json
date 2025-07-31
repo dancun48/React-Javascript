@@ -29,6 +29,36 @@
             "title": "MIS Specialist",
             "salary": 600000,
             "location": "Eldoret"
+        },
+        {
+            "id": 6,
+            "title": "MIS Specialist",
+            "salary": 600000,
+            "location": "Eldoret"
+        },
+        {
+            "id": 7,
+            "title": "MIS Specialist",
+            "salary": 600000,
+            "location": "Eldoret"
+        },
+        {
+            "id": 8,
+            "title": "MIS Specialist",
+            "salary": 600000,
+            "location": "Eldoret"
+        },
+        {
+            "id": 9,
+            "title": "MIS Specialist",
+            "salary": 600000,
+            "location": "Eldoret"
+        },
+        {
+            "id": 10,
+            "title": "MIS Specialist",
+            "salary": 600000,
+            "location": "Eldoret"
         }
     ]
 }

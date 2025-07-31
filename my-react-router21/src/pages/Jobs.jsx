@@ -1,7 +1,7 @@
 
 
-import React from 'react'
-import { Link,useLoaderData } from 'react-router-dom'
+import React from 'react';
+import { Link,useLoaderData } from 'react-router-dom';
 
 const Jobs = () => {
 
@@ -12,10 +12,12 @@ const Jobs = () => {
     return (
 
         <div className='jobs'>
+
             {jobsData.map((job) => {
-                return  (<Link>
                 
-                            <h4>ID: 00/{job.id}/2025</h4>
+                return  (<Link to={job.id.toString()} key={job.id}>
+                
+                            <h5>ID: 00/{job.id}/2025</h5>
                             <h4>Title: {job.title}</h4>
                             <p>Location: {job.location}</p>
                             <p>Salary: {job.salary}</p>
@@ -32,6 +34,10 @@ export default Jobs
 
 export const jobsLoader = async () => {
 
-    const response = await fetch('http://localhost:5000/jobs');
+    const response = await fetch('http://localhost:3000/jobs');
+
+    if(!response.ok){
+        throw Error('Could not find the job details!⛔');
+    }
     return response.json();
 }
