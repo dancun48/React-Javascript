@@ -1,0 +1,21 @@
+
+.product{
+  margin: 10px;
+  border: 1px solid;
+  width: 166.67px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  background: skyblue;
+}
+.product div{
+  padding: 3px;
+}
+.product div>button{
+  cursor: pointer;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2px;
+}

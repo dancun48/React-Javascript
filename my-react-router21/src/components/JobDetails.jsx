@@ -25,6 +25,9 @@ const JobDetails = () => {
 
 export default JobDetails
 
+//i am going to find out why this part keeps highlighting in red
+
+
 export const jobDetailsLoader = async ({params})=> {
     const {id} = params;
     const res = await fetch('http://localhost:3000/jobs/' + id);
